@@ -1,0 +1,46 @@
+
+.heroContainer {
+  
+  .left {
+    .texts {
+      color: var(--font-color-dm);
+      h1 {
+        font-size: 4em;
+        margin: 0px;
+      }
+    }
+    
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  .right {
+    flex-grow: 1;
+  }
+}
+
+.containerBg {
+  background-position-y: 62%;
+  background-size: cover;
+}
+
+.containerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.contentFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+

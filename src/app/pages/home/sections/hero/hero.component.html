@@ -1,0 +1,16 @@
+<div class="pageBlock heroContainer containerBg containerFlex" [style.backgroundImage]="'url(' + backgroundImageSrc + ')'">
+  <div class="left contentFlex">
+    <div class="texts">
+      <h1>{{name}}</h1>
+      <span>{{title}}</span>
+    </div>
+    <div class="links">
+      <image-button *ngFor="let link of heroLinks;" 
+        [href]="link.link" [src]="link.imageSrc" [width]="link.width" />
+    </div>
+  </div>
+  <div class="right">
+
+  </div>
+  
+</div>

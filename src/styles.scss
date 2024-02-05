@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+$mobile-max-width: 500px;
+
+:root {
+  --font-color-dm: white;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.pageBlock {
+  padding: 32px;
+  padding-top: 64px;
+  padding-bottom: 8px;
+}
+
+
+@media screen and (min-width: $mobile-max-width) {
+  .pageBlock {
+    height: 60svh;
+    padding: 56px;
+    padding-bottom: 16px;
+    // padding-top: 256px;
+  }
+  
+}
