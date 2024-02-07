@@ -5,6 +5,7 @@ import { EducationComponent } from './sections/education/education.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
 import { ContactComponent } from './sections/contact/contact.component';
 import { HeroLink } from './sections/hero/hero-link.model';
+import { ProjectModel } from './sections/projects/project/project.model';
 
 @Component({
   selector: 'app-home',
@@ -30,6 +31,47 @@ export class HomeComponent {
     },
   ];
 
+  aboutTitle: string = "About"
+  aboutContent: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum, turpis sit amet volutpat vestibulum, tellus lectus mattis arcu, sit amet egestas justo odio sed nibh. Nulla facilisi. Phasellus id lacinia justo. Donec vitae vehicula metus, eu commodo risus. Fusce ac diam quis diam pretium ullamcorper. Ut sagittis libero libero, sit amet interdum mi molestie ullamcorper. Phasellus pharetra enim non ipsum porta consequat.";
 
+
+  projects: ProjectModel[] = [
+    {
+      title: "Manhattan Project",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum, turpis sit amet volutpat vestibulum, tellus lectus mattis arcu, sit amet egestas justo odio sed nibh. Nulla facilisi. Phasellus id lacinia justo. Donec vitae vehicula metus, eu commodo risus. Fusce ac diam quis diam pretium ullamcorper. Ut sagittis libero libero, sit amet interdum mi molestie ullamcorper.",
+      repoLink: "https://github.com/sxxxi",
+      deployedLink: "",
+      imageLinks: [
+        // "assets/img/cat-sleep.jpg"
+      ]
+    },
+    {
+      title: "Manhattan Project",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      repoLink: "",
+      deployedLink: "",
+      imageLinks: [
+        "assets/img/cat-sleep.jpg"
+      ]
+    },
+    {
+      title: "Manhattan Project",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum, turpis sit amet volutpat vestibulum, tellus lectus mattis arcu, sit amet egestas justo odio sed nibh. Nulla facilisi. Phasellus id lacinia justo. Donec vitae vehicula metus, eu commodo risus. Fusce ac diam quis diam pretium ullamcorper. Ut sagittis libero libero, sit amet interdum mi molestie ullamcorper.",
+      repoLink: "https://github.com/sxxxi",
+      deployedLink: "",
+      imageLinks: [
+        "assets/img/cat-sleep.jpg"
+      ]
+    },
+    {
+      title: "Manhattan Project",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum, turpis sit amet volutpat vestibulum, tellus lectus mattis arcu, sit amet egestas justo odio sed nibh. Nulla facilisi. Phasellus id lacinia justo. Donec vitae vehicula metus, eu commodo risus. Fusce ac diam quis diam pretium ullamcorper. Ut sagittis libero libero, sit amet interdum mi molestie ullamcorper.",
+      repoLink: "https://github.com/sxxxi",
+      deployedLink: "",
+      imageLinks: [
+        "assets/img/cat-sleep.jpg"
+      ]
+    },
+  ]
 
 }

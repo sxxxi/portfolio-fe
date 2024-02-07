@@ -3,25 +3,27 @@ $mobile-max-width: 500px;
 
 :root {
   --font-color-dm: white;
+
+  font-size: 20px;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   padding: 0px;
   margin: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .pageBlock {
-  padding: 32px;
-  padding-top: 64px;
-  padding-bottom: 8px;
+  padding: 16px;
 }
 
 
 @media screen and (min-width: $mobile-max-width) {
   .pageBlock {
-    padding: 56px;
-    padding-bottom: 16px;
-    // padding-top: 256px;
+    padding: 64px 20%;
   }
-  
 }

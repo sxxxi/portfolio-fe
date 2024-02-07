@@ -1,0 +1,15 @@
+<li class="projectItem">
+  <div *ngIf="project" class="imageContainer">
+    <img *ngFor="let imageLink of project.imageLinks;" [src]="imageLink" />
+  </div>
+  <div class="content">
+    <div class="texts">
+      <h3>{{project?.title}}</h3>
+      <p>{{project?.description}}</p>
+    </div>
+  </div>
+  <div class="links">
+    <!-- <image-button *ngIf="project?.repoLink != null" [src]="'assets/img/github-mark.svg'" [href]="project?.repoLink" /> -->
+    <image-button *ngIf="project && project.repoLink" [src]="'assets/img/github-mark.svg'" [href]="project.repoLink" [width]="35" />
+  </div>
+</li>

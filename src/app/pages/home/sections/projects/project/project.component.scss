@@ -1,0 +1,47 @@
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 450px;
+    height: 100%;
+
+  box-shadow: rgb(160, 160, 160) 0px 0px 3px;
+
+  .imageContainer {
+    width: 100%;
+    aspect-ratio: 3;
+    
+    img {
+      width: inherit;
+      aspect-ratio: inherit;
+      object-fit: cover;
+    }
+  }
+
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 32px;
+    padding-bottom: 0px;
+    gap: 8px;
+
+    .texts {
+      flex-grow: 1;
+    }
+
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 24px;
+    height: 35px;
+
+    image-button {
+      height: 100%;
+    }
+  }
+}

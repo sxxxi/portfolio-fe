@@ -1,0 +1,16 @@
+.aboutBlock {
+  background-color: beige;
+
+  .content {
+    column-count: 1;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .aboutBlock {
+    .content {
+      column-count: 2;
+    }
+
+  }
+}

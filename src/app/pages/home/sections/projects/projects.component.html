@@ -1,1 +1,6 @@
-<p>projects works!</p>
+<section class="pageBlock projectList">
+  <h2>{{title}}</h2>
+  <ul class="projectContainer">
+    <project *ngFor="let project of projects;" [project]="project" /> 
+  </ul>
+</section>

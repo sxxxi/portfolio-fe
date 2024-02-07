@@ -1,5 +1,6 @@
-<hero [name]="name" [title]="title" [heroLinks]="heroLinks" [backgroundImageSrc]="heroBackgroundImageSrc" />
-<about />
-<education />
-<projects />
+<hero  [name]="name" [title]="title" 
+  [heroLinks]="heroLinks" [backgroundImageSrc]="heroBackgroundImageSrc" />
+<about [title]="aboutTitle" [content]="aboutContent"/>
+<!-- <education /> -->
+<projects title="Projects" [projects]="projects" />
 <contact />
